@@ -2,4 +2,4 @@
 
 ## Cara menjalankan
 1. Jalankan terminal pada folder src
-2. Jalankan command: python matkul.py
+2. Pada terminal, jalankan command: python matkul.py
