@@ -9,7 +9,7 @@ def add_vertice(graph, vertice_name):
 
 def add_edge(graph, from_vertice, to_vertice):
     # Menambahkan edge baru pada graph
-    # Jika tidak simpul bernama from_vertice atau to_vertice pada graph,
+    # Jika tidak ada simpul bernama from_vertice atau to_vertice pada graph,
     # akan mengeluarkan pesan
     if ((from_vertice in graph) and (to_vertice in graph)):
         graph[from_vertice].append(to_vertice)
