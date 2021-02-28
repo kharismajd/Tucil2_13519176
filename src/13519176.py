@@ -107,11 +107,12 @@ def topo_sort(graph):
     # Maka akan mengembalikan
     # [["C1"], ["C2", "C3"], ["C4"], ["C5"]]
     sorted = []
-    while (len(graph) != 0):
-        zero_in_degree_vertices = get_zero_in_degree_vertices(graph)
+    graph_copy = dict(graph)    # Copy agar graph pada parameter tidak terhapus
+    while (len(graph_copy) != 0):
+        zero_in_degree_vertices = get_zero_in_degree_vertices(graph_copy)
         if (len(zero_in_degree_vertices) > 0):
             sorted.append(zero_in_degree_vertices)
-            delete_vertice(graph, zero_in_degree_vertices)
+            delete_vertice(graph_copy, zero_in_degree_vertices)
         else:
             return 0
     return sorted
